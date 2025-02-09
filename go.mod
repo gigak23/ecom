@@ -1,4 +1,4 @@
-module github.com/gigak23
+module github.com/gigak23/ecom
 
 go 1.23.5
 

@@ -2,12 +2,14 @@ package main
 
 import (
 	"log"
+
+	"github.com/gigak23/ecom/internal/env"
 )
 
 func main() {
 
 	cfg := config{
-		addr : ":8080", // Create config with addr
+		addr: env.GetString("ADDR", ":8080"), // Create config with addr
 	}
 	app := &application{
 		config: cfg, // Pass config into application struct
